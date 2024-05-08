@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-06T18:40:59 IST" name="Surefire suite" finished-at="2024-05-06T18:41:00 IST" duration-ms="1332">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestRunner@27ce24aa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-06T18:40:59 IST" name="Surefire test" finished-at="2024-05-06T18:41:00 IST" duration-ms="1332">
+      <class name="Cucumber.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestRunner@27ce24aa]" started-at="2024-05-06T18:40:59 IST" name="setUpClass" finished-at="2024-05-06T18:41:00 IST" duration-ms="911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5ae76500]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestRunner@27ce24aa]" started-at="2024-05-06T18:41:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T18:41:00 IST" duration-ms="288" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Negative tests of submitting the order."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "LearningAutomation.SeleniumWithFramework.LandingPage.loginApp(String, String)" because "this.landingpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "LearningAutomation.SeleniumWithFramework.LandingPage.loginApp(String, String)" because "this.landingpage" is null
+at Stepdefinations.Stepdefinitions_for_SO.Logged_In_With_Username_And_Password(Stepdefinitions_for_SO.java:36)
+at ✽.Logged in with username ngill@email.com and password Patiala@12(file:///E:/eclipse-workspace/SeleniumWithFramework/src/test/java/Cucumber/ErrorValidation.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestRunner@27ce24aa]" started-at="2024-05-06T18:41:00 IST" name="tearDownClass" finished-at="2024-05-06T18:41:00 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
