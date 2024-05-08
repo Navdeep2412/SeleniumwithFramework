@@ -43,6 +43,7 @@ public class BaseTest {
 				System.getProperty("browser"):prop.getProperty("browser"); //for maven build while doing in cmd and jenkins
 	//	String browsername = prop.getProperty("browser");//only for globaldata properties file
 	//commenting for automation
+	//again
 		if (browsername.contains("chrome")) 
 		{
 			ChromeOptions options=new ChromeOptions(); //for jenkins headless
