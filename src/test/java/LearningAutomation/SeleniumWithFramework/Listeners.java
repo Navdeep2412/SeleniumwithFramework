@@ -27,6 +27,7 @@ public class Listeners extends BaseTest implements ITestListener  {
  @Override
 	 public  void onTestStart(ITestResult result) {
 	 test=extent.createTest(result.getMethod().getMethodName());
+	 //for automation
 	 }
 
 @ Override
